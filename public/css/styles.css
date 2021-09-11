@@ -1,0 +1,93 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    background-color: rgb(234, 201, 38);
+}
+
+.icono-hamburguesa{
+    background-color: rgba(3, 38, 76);
+    color:  white;
+    font-size: 40px;
+
+
+}
+.menu-hamburguesa{
+   margin: auto;
+    text-align: center;
+}
+
+.cuerpotexto{
+    font-size: 18px;
+    
+}
+
+.banner {
+    width: 100vw;
+    max-width: 100%;
+}
+p.compra-cuotas{
+    text-align: center;
+}
+.busqueda{
+    background-color: white;
+}
+
+a.negrita {
+    color: black;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+    color: blue;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: green;
+}
+
+.descripcion {
+    font-size: 16px;
+}
+
+.paga{
+    background:white;
+    color: blue;
+    text-align: center;
+    font-size: 40px;
+}
+
+.envio{
+    background:white;
+    color: blue;
+    font-size: 40px;
+    
+}
+
+.seguridad {
+    background:white;
+    color: blue;
+    text-align: center;
+    font-size: 40px;
+}
+
+.centrar-footer {
+    text-align: center;
+}
+
+.icono-tarjeta {
+    text-align: center;
+}
+.icono-regalo {
+    text-align: center;
+}
+.icono-seguridad {
+    text-align: center;
+}
