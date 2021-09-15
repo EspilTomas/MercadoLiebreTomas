@@ -1,16 +1,20 @@
 *{
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 
 header {
     background-color: rgb(234, 201, 38);
+
 }
 
 .icono-hamburguesa{
     background-color: rgba(3, 38, 76);
     color:  white;
-    font-size: 40px;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 3px;
 
 
 }
@@ -27,6 +31,7 @@ header {
 .banner {
     width: 100vw;
     max-width: 100%;
+    margin-top: 0px;
 }
 p.compra-cuotas{
     text-align: center;
@@ -46,15 +51,18 @@ a.negrita {
 .precios {
     font-size: 18px;
     color: blue;
+    text-align: left;
 }
 
 .descuentos {
     font-size: 16px;
     color: green;
+    text-align: left;
 }
 
 .descripcion {
     font-size: 16px;
+    text-align: left;
 }
 
 .paga{
@@ -90,4 +98,67 @@ a.negrita {
 }
 .icono-seguridad {
     text-align: center;
+}
+.icono-carrito{
+    color: green;
+    text-align: left;
+    border-radius: 50%;
+    border: solid 1px green;
+    padding: 10px;
+    
+}
+
+
+main{
+    background-color: #ebebeb;
+
+}
+
+
+article{
+    margin-top: 10px;
+    margin-bottom: 10px; 
+} 
+    
+.caja-articulos{
+        border: 1px solid #ebebeb;
+        padding: 15px;
+    }
+    
+section img{
+    border-bottom: 1px solid #ebebeb;
+    width: 90%;
+}   
+
+
+
+
+/* mobile */
+@media (min-width:0px) and (max-width:480px){
+    .descripcion{
+        display: none;
+    }
+    .negrita{
+        display: none;
+    }
+
+}
+
+/*tablets*/
+@media (min-width: 481px){
+    .caja-articulos{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .icono-hamburguesa{
+        display: none;
+    }
+}
+/*desktop*/
+@media (min-width: 769px){
+    .caja-articulos{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .icono-hamburguesa{
+        display: none;
+    }
 }
