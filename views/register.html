@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--da al browser instrucciones de como se debe dimensionary escalar la pagina web al cargarse-->
+    <title>Mercado Liebre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- LINKEADO DE FUENTES, ICONOS, ETC-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/normalize.css"> <!--LINKEANDO LA CARPETA NORMALIZE.CSS-->
+    <link rel="stylesheet" href="/css/styles.css"> <!--LINKEANDO LA CARPETA STYLES.CSS-->
+</head>
+<body>
+    
+    <main>
+
+      
+    <h2 class="h2-completar-datos">Completa los datos</h2>  <!--titulo-->
+        
+        <form class="formulario-register" action="/register" method="POST">
+        <div class="formulario-propiedades-registro">
+            
+            <input class="input-registro" type="text" name="nombre-apellido" id="nombre-apellido" placeholder="Nombre y apellido" minlength="1" >
+        
+        </div>
+        <div class="formulario-propiedades-registro">
+            <input class="input-registro" type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de usuario">   
+        </div>
+        <div class="formulario-propiedades-registro">
+            <input class="input-registro" type="email" name="email" id="email" placeholder="E-mail">
+        </div>
+        <div class="formulario-propiedades-registro">
+           
+            <label><h2>Fecha de nacimiento</h2></label> <!--FECHA NACIMIENTO-->
+            </br>               
+            <input class="input-registro" type="date" name="fecha" placeholder="mm/dd/yyyy">
+       
+        </div>
+        <div class="formulario-propiedades-registro">
+            
+        
+            <input class="input-registro" type="text" name="domilicio" placeholder="domicilio">            <!-- DOMICILIO-->
+        
+        </div>
+        <div class="formulario-propiedades-registro">
+           
+            <label for="compra-o-venta"><h2>Perfil de usuario</h2></label>  <!-- COMPRADOR O VENDEDOR ?-->
+            <br/>
+            <br/>
+            <input type="radio" name="compra">
+            Comprador
+            <input type="radio" name="venta">   
+            Vendedor
+        
+        </div>
+
+         <div class="formulario-propiedades-registro">
+           
+            <label><h2>Categorías de interés</h2></label>    <!-- CATEGORIAS DE INTERES-->
+            <br/>
+            <input type="checkbox" name="Electro">
+            Electro
+            <br/>
+            <br/>
+            <input type="checkbox" name="Moda">
+            Moda
+            <br/>
+            <br/>
+            <input type="checkbox" name="Hogar">
+            Hogar
+            <br/>
+            <br/>
+            <input type="checkbox" name="Jugueteria">
+            Jugueteria
+            <br/>
+            <br/>
+            <input type="checkbox" name="Vidasana">
+            Vida sana   
+            <br/>
+        
+        </div>
+            <button class="botones-en-register" type="submit">Enviar</button>
+            <button class="botones-en-register" type="reset">Borrar</button>
+        </main>  
+            <footer>
+                
+            </footer>
+    </form>
