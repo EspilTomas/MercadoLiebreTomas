@@ -238,6 +238,7 @@ main section article i{
     flex-direction: column;
     text-align: inherit;
     background-color: #ebebeb;
+    box-sizing: border-box;
 
 }
 
@@ -306,7 +307,7 @@ main section article i{
 
 
 /* mobile */
-@media (min-width:0px) and (max-width:480px){
+@media (min-width:0px){
     .descripcion{
         display: none;
     }
@@ -324,7 +325,7 @@ main section article i{
 
 
 /*tablets*/
-@media (min-width: 481px) {
+@media (min-width: 768px) {
     /*.caja-articulos{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
@@ -367,13 +368,14 @@ main section article i{
         justify-content: center;
     }
     
+    
 
     
 
 
 }
 /*desktop*/
-@media (min-width: 769px){
+@media (min-width: 1024px){
     
     
      main section{
