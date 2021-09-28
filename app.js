@@ -9,9 +9,11 @@ path.join(__dirname, './public');
 
 app.use( express.static(publicPath));
 
-app.listen(3000, () =>{
+
+// VARIABLED ENTORNO //
+app.listen( process.env.PORT || 3000, () =>{
     console.log('Servidor corriendo en el puerto 3000')
-});
+}); 
 
 
 
