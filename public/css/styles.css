@@ -305,6 +305,18 @@ main section article i{
     
 }
 
+/* COLOR FOOTER ICONOS AL PONER EL MOUSE ENCIMA*/
+.paga:hover{
+    color: orange;
+}
+
+.envio:hover{
+    color: orange;
+}
+
+.seguridad:hover{
+    color: orange;
+}
 
 /* mobile */
 @media (min-width:0px){
