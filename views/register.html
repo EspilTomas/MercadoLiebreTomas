@@ -74,14 +74,14 @@
         <form class="formulario-register" action="/register" method="POST">
         <div class="formulario-propiedades-registro">
             
-            <input class="input-registro" type="text" name="nombre-apellido" id="nombre-apellido" placeholder="Nombre y apellido" minlength="8" >
+            <input class="input-registro" type="text" name="nombre-apellido" id="nombre-apellido" placeholder="Nombre y apellido" minlength="8" required>
         
         </div>
         <div class="formulario-propiedades-registro">
-            <input class="input-registro" type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de usuario">   
+            <input class="input-registro" type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de usuario" minlength="10" required>   
         </div>
         <div class="formulario-propiedades-registro">
-            <input class="input-registro" type="email" name="email" id="email" placeholder="E-mail">
+            <input class="input-registro" type="email" name="email" id="email" placeholder="E-mail" required>
         </div>
         <div class="formulario-propiedades-registro">
            
@@ -93,7 +93,7 @@
         <div class="formulario-propiedades-registro">
             
         
-            <input class="input-registro" type="text" name="domilicio" placeholder="domicilio">            <!-- DOMICILIO-->
+            <input class="input-registro" type="text" name="domilicio" placeholder="domicilio" minlength="15" required>            <!-- DOMICILIO-->
         
         </div>
         <div class="formulario-propiedades-registro">
@@ -101,34 +101,34 @@
             <label for="compra-o-venta"><h2>Perfil de usuario</h2></label>  <!-- COMPRADOR O VENDEDOR ?-->
             <br/>
             <br/>
-            <input type="radio" name="compra">
+            <input type="radio" name="compra-o-venta" value="compra" required>
             Comprador
-            <input type="radio" name="venta">   
+            <input type="radio" name="compra-o-venta" value="venta" required>   
             Vendedor
         
         </div>
 
          <div class="formulario-propiedades-registro">
            
-            <label><h2>Categorías de interés</h2></label>    <!-- CATEGORIAS DE INTERES-->
+            <label for="cateogorias-interes"><h2>Categorías de interés</h2></label>    <!-- CATEGORIAS DE INTERES-->
             <br/>
-            <input type="checkbox" name="Electro">
+            <input type="checkbox" name="cateogorias-interes" id="cateogorias-interes" value="Electro" required>
             Electro
             <br/>
             <br/>
-            <input type="checkbox" name="Moda">
+            <input type="checkbox" name="cateogorias-interes" id="cateogorias-interes" value="Moda" required>
             Moda
             <br/>
             <br/>
-            <input type="checkbox" name="Hogar">
+            <input type="checkbox" name="cateogorias-interes" id="cateogorias-interes" value="Hogar" required> 
             Hogar
             <br/>
             <br/>
-            <input type="checkbox" name="Jugueteria">
+            <input type="checkbox" name="cateogorias-interes" id="cateogorias-interes" value="Jugueteria" required>
             Jugueteria
             <br/>
             <br/>
-            <input type="checkbox" name="Vidasana">
+            <input type="checkbox" name="cateogorias-interes" id="cateogorias-interes" value="Vidasana" required>
             Vida sana   
             <br/>
         

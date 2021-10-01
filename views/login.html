@@ -54,17 +54,14 @@
     <main>
         <form class="formulario" action="/login" method="post">
         <div class="formulario-propiedades">
-    
-            <input class="input-en-login" type="text" name="usuario" placeholder="Nombre de usuario" minlength="1">
+            <label for="usuario"></label>
+            <input class="input-en-login" type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" minlength="8">
         </div>
         <div class="formulario-propiedades">
             <label for="password"></label>
-            <input class="input-en-login" type="password" name="password" placeholder="Elegi tu contraseña" minlength="1">
+            <input class="input-en-login" type="password" name="password" id="password" placeholder="Elegi tu contraseña" minlength="8">
         </div>
-        <button class="boton-enviar-login" type="menu">Enviar</button>
-        
-
-
+        <button class="boton-enviar-login" type="submit">Enviar</button>
     </form>
 </main>
 

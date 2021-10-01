@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     color: #222222;
+    text-decoration: none
 }
 
 ul{
@@ -318,12 +319,23 @@ main section article i{
     color: orange;
 }
 
+.articulos-ultima-visita{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caja-articulos{
+    width: 90%;
+}
+
+
 /* mobile */
+
 @media (min-width:0px){
     .descripcion{
         display: none;
     }
-    
+
     .both-navbar{
         display: none;
     }
@@ -332,16 +344,17 @@ main section article i{
         font-size: 24px;
     }
 
+
     
 }
 
 
 /*tablets*/
 @media (min-width: 768px) {
-    /*.caja-articulos{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
+    .caja-articulos{
+        width: 45%;
     }
-    */
 
     .both-navbar{
         display: flex;
@@ -390,8 +403,8 @@ main section article i{
 @media (min-width: 1024px){
     
     
-     main section{
-         flex-wrap: nowrap;
+     .caja-articulos{
+         width: 22%;
      }
 
      .caja-articulos:hover .descripcion{  /* DESAPARECE LA DESCRIPCION AL PONER EL MOUSE*/
@@ -400,18 +413,12 @@ main section article i{
 
    .caja-articulos{
        box-shadow: 0px 0px 0px rgb(100, 100, 100);
+       transition: box-shadow 0.5s;
    }
-   
+
    .caja-articulos:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-
-
-   .caja-articulos:hover{
-    transition: box-shadow 0.5s;
-   }
-
-  
   
    .icono-carrito:hover{           /* ANIMACION GIRAR CARRITO 90 ~grados*/
     transform: rotate(-90deg);
